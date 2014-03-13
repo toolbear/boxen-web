@@ -42,6 +42,7 @@ Line Tools (even if you already have Xcode installed).
   until $(gcc -v >/dev/null) && test -d /usr/include; do
     sleep 60
   done
+  export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
 fi
 
 # show the banner and wait for a response
